@@ -7,6 +7,8 @@ RUN apk update \
     yaml-dev zlib-dev nodejs yarn mariadb-dev \
     tzdata bash
 
+RUN apk add shared-mime-info
+
 RUN gem install bundler -v 2.1.4
 
 ENV app /app
